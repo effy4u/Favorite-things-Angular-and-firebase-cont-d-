@@ -1,3 +1,18 @@
 <h1>
   {{title}}
 </h1>
+<hr>
+<h2>Favorite Color</h2>
+<div id="box" [style.backgroundColor]="favColor">{{favColor}}</div>
+
+<button type="button" (click)="setColor('blue')">Blue</button>
+<button type="button" (click)="setColor('green')">Green</button>
+<button type="button" (click)="setColor('red')">Red</button>
+<button type="button" (click)="setColor('purple')">Purple</button>
+<button type="button" (click)="setColor('black')">Black</button>
+<button type="button" (click)="setColor('brown')">Brown</button>
+<br>
+<button type="button" (click)="updateColor()">Update</button>
+<hr>
+<h2>Favorite Number</h2>
+<hr>

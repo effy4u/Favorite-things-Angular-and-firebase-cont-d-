@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Kings';
+  title = 'Kings is working';
+  favColor: string="blue";
+
+  setColor(selectedColor:string):void{
+    this.favColor=selectedColor;
+    
+  }
+
+  updateColor(): void{
+    console.log("You have updated the " );
+  }
+  
 }
