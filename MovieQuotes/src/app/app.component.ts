@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,15 +6,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Kings is working';
-  favColor: string="blue";
-
-  setColor(selectedColor:string):void{
-    this.favColor=selectedColor;
-    
+  favColor ="blue";
+setColor(selectedColor:string):void{
+  this.favColor=selectedColor;
+}
+updateColor(): void{
+  console.log('You have updated the ' );
   }
-
-  updateColor(): void{
-    console.log("You have updated the " );
-  }
-  
 }
